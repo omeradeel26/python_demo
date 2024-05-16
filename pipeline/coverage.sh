@@ -39,4 +39,4 @@ mv "$target_dir/.coverage" "$target_dir/testing_report"
 mv "$target_dir/htmlcov" "$target_dir/testing_report"
 mv "$target_dir/.coveragerc" "$target_dir/testing_report"
 
-exit exit_code
+exit $exit_code
