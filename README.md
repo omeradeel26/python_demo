@@ -52,7 +52,7 @@ This removes the entire 'if block' from your code coverage report.
 
 ## Pipeline Shell Script
 
-To perform the tests and obtain coverage results in a directory, run `cd pipeline` and run  `bash coverage.sh path/to/directory` to obtain the coverage results. To view these results, open the `testing_report` directory located within the executed directory. Refer to the `coverage.py` docs to correctly configure the code coverage report in the `.coveragerc` file ie. branching coverage, coverage failure benchmark etc. To integrate this into a CI/CD pipeline, note that the shell script returns an exit code of 2 if it fails or 0 otherwise.
+To perform the tests and obtain coverage results in a directory, run `cd pipeline_scripts` and run  `bash coverage.sh path/to/directory` to obtain the coverage results. To view these results, open the `testing_report` directory located within the executed directory. Refer to the `coverage.py` docs to correctly configure the code coverage report in the `.coveragerc` file ie. branching coverage, coverage failure benchmark etc. To integrate this into a CI/CD pipeline, note that the shell script returns an exit code of 2 if it fails or 0 otherwise.
 
 
 ## Testing
