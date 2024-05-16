@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Directory to change into (current directory + /modules)
+# get specified directory
 target_dir="$1"
 
 # move config file to parent file
