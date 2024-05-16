@@ -50,6 +50,10 @@ if __name__ == "__main__": #pragma: no cover
 ```
 This removes the entire 'if block' from your code coverage report.
 
+## Pipeline Shell Script
+
+To perform the tests and obtain coverage results in a directory, run `cd pipeline` and run  `bash coverage.sh path\to\directory` to obtain the coverage results. To view these results, open the `testing_report` directory located within the executed directory. Refer to the `coverage.py` docs to correctly configure the code coverage report in the `.coveragerc` file ie. branching coverage, coverage failure benchmark etc. To integrate this into a CI/CD pipeline, note that the shell script returns an exit code of 2 if it fails or 0 otherwise.
+
 
 ## Testing
 
@@ -61,17 +65,13 @@ pytest
 ```
 
 ### Viewing Coverage Report
-To view code coverage, run the following command. The first command outputs the results in the terminal. To get a detailed analysis, run the next command which outputs the results as an interactive report-based webpage. View the next section on how to open the report.
+To view code coverage, run the following command. The first command outputs the results in the terminal. To get a detailed analysis, run the next command which outputs the results as an interactive report-based webpage. 
 ```bash
 coverage run -m pytest
 coverage html
 ```
 
-Open the generated HTML coverage report (in the htmlcov directory) in a web browser to view detailed coverage information. You can run the following command to open the report in Windows Powershell or one can open the file manually located at `.\htmlcov\index.html`.
-
-```bash
-Start-Process -FilePath ".\htmlcov\index.html"
-```
+Open the generated HTML coverage report manually in the file manually located at `.\htmlcov\index.html`.
 
 ## Extra Documentation 
 

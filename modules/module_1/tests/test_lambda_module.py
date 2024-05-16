@@ -1,6 +1,6 @@
 import pytest
 
-from lambda_module import upload_to_database, get_from_database, preprocess_data, postprocess_data
+from lambda_module import *
 
 def test_upload_to_database():
     """Test upload_to_database function."""
