@@ -1,5 +1,6 @@
 [run]
-branch = False
+branch = True
 
 [report]
 fail_under = 95
+# branch coverage under 90

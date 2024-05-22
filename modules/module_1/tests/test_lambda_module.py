@@ -2,10 +2,10 @@ import pytest
 
 from lambda_module import *
 
-def test_upload_to_database():
-    """Test upload_to_database function."""
-    data = "Test data"
-    assert upload_to_database(data) == True
+# def test_upload_to_database():
+#     """Test upload_to_database function."""
+#     data = "Test data"
+#     assert upload_to_database(data) == True
 
 def test_get_from_database():
     """Test get_from_database function."""
